@@ -108,7 +108,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(f"O CPF {cpf} é {'válido' if valido else 'inválido'}.")
     else:
         return func.HttpResponse(
-             "Por favor, passe o CPF na query string ou no corpo da requisição.",
+             "Por favor,informe o CPF na query string ou no corpo da requisição.",
              status_code=400
         )
 ```
